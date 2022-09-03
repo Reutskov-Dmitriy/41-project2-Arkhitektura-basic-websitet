@@ -8,6 +8,7 @@ body {
 	margin: 0 auto;
 	width: 1600px;
 	height: 100vh;
+	color: #ffffff;
 	background: url(../../assets/images/tu-tram-pham-202263\ 1.png) 0 0 / cover no-repeat;
 	&::before {
 		content: "";
@@ -16,7 +17,6 @@ body {
 		background: linear-gradient(243.43deg, #7e5aff 16.9%, #55b7ff 83.27%);
 		position: absolute;
 		z-index: -1;
-		color: #ffffff;
 	}
 
 	&__row {
@@ -30,6 +30,12 @@ body {
 	}
 
 	&__social {
+		& div {
+			width: 40px;
+			height: 40px;
+			border: 1px solid #ffffff;
+			border-radius: 50%;
+		}
 	}
 
 	&__slider {
@@ -40,7 +46,12 @@ body {
 	}
 }
 .menu {
+	display: flex;
 	&__item {
+		font-family: $ff-ssp;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 18px;
 	}
 }
 .slider {
