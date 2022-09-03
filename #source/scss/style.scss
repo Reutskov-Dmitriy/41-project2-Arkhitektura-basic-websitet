@@ -123,7 +123,7 @@ h2 {
 	min-width: 0;
 	height: 52.5vh;
 }
-
+// Slick Slider
 .slick-list {
 	overflow: hidden;
 }
@@ -185,7 +185,7 @@ h2 {
 	}
 }
 
-// section PROJECTS
+// SECTION PROJECTS
 .projects {
 	color: #2c4058;
 	&__title {
@@ -260,19 +260,38 @@ h2 {
 	}
 }
 
-// section News
+// SECTION News
 .news {
+	font-family: $ff-m;
+
+	background: url(../assets/images/Background-news.png) 0 0 / cover no-repeat;
+	&::before {
+		content: "";
+		width: 100vw;
+		height: 100vh;
+		background: linear-gradient(237.1deg, #24ccfa 11.16%, #3c7fd4 89.18%);
+		position: absolute;
+		z-index: -1;
+	}
 }
-.container {
-}
+
 .title {
+	text-align: center;
+	color: #ffffff;
+	&::before {
+		content: "";
+		width: 6.25vw;
+		height: 0;
+		border: 1px solid #ffffff;
+	}
 }
 .news-slider {
+	margin-top: 9.2vh;
 	&__card {
 	}
 }
 .card {
-	max-width: 23.125vw;
+	width: 370px;
 	max-height: 514px;
 
 	&_title {
@@ -282,7 +301,7 @@ h2 {
 	}
 
 	&__image {
-		width: 100%;
+		min-width: 100%;
 		height: 240px;
 		overflow: hidden;
 		background-color: burlywood;
@@ -292,21 +311,46 @@ h2 {
 	}
 
 	&__content {
+		background-color: #ffffff;
+		padding: 30px 20px;
 	}
 
 	&__description {
+		margin-top: 15px;
+		font-family: $ff-os;
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 25px;
 	}
 
 	&__author {
 	}
 }
 .author {
+	margin-top: 40px;
+	display: flex;
+	gap: 20px;
+
 	&__image {
+		width: 60px;
+		max-height: 60px;
+		& img {
+			border-radius: 50%;
+		}
 	}
 
 	&__name {
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 22px;
 	}
 
 	&__date {
+		margin-top: 6px;
+
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 17px;
+		color: #55b7ff;
 	}
 }
