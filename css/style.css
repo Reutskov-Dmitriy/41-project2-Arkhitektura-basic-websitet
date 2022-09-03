@@ -80,9 +80,19 @@ h6 {
 }
 
 /*--------------------*/
+a {
+  cursor: pointer;
+  color: #ffffff;
+}
+
+.container {
+  width: 1600px;
+  padding: 0 215px;
+}
+
 .header {
   margin: 0 auto;
-  width: 1600px;
+  max-width: 1600px;
   height: 100vh;
   color: #ffffff;
   background: url(../../assets/images/tu-tram-pham-202263\ 1.png) 0 0/cover no-repeat;
@@ -97,10 +107,61 @@ h6 {
 }
 .header__row {
   display: flex;
+  align-items: center;
+  gap: 110px;
+  max-width: 1170px;
+  height: 54px;
+}
+.header__menu {
+  width: 515px;
+  height: 18px;
+}
+.header__social {
+  display: flex;
+  gap: 20px;
+}
+.header__social ._icon-facebook {
+  position: relative;
+}
+.header__social ._icon-facebook::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.header__social ._icon-twitter {
+  position: relative;
+}
+.header__social ._icon-twitter::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.header__social ._icon-instagram {
+  position: relative;
+}
+.header__social ._icon-instagram::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .header__social div {
   width: 40px;
   height: 40px;
   border: 1px solid #ffffff;
   border-radius: 50%;
+}
+.menu {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  gap: 93px;
+}
+.menu__item {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
 }/*# sourceMappingURL=style.css.map */
