@@ -80,16 +80,21 @@ h6 {
 }
 
 /*--------------------*/
-header {
+.header {
+  margin: 0 auto;
   width: 1600px;
-  height: 800px;
+  height: 100vh;
   background: url(../../assets/images/tu-tram-pham-202263\ 1.png) 0 0/cover no-repeat;
 }
-header::before {
+.header::before {
   content: "";
   width: 1600px;
-  height: 800px;
+  height: 100vh;
   background: linear-gradient(243.43deg, #7e5aff 16.9%, #55b7ff 83.27%);
   position: absolute;
   z-index: -1;
+  color: #ffffff;
+}
+.header__row {
+  display: flex;
 }/*# sourceMappingURL=style.css.map */

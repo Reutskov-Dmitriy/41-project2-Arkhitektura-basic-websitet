@@ -1,16 +1,49 @@
 @import "reset";
 @import "fonts";
 
-header {
+body {
+}
+
+.header {
+	margin: 0 auto;
 	width: 1600px;
-	height: 800px;
+	height: 100vh;
 	background: url(../../assets/images/tu-tram-pham-202263\ 1.png) 0 0 / cover no-repeat;
 	&::before {
 		content: "";
 		width: 1600px;
-		height: 800px;
+		height: 100vh;
 		background: linear-gradient(243.43deg, #7e5aff 16.9%, #55b7ff 83.27%);
 		position: absolute;
 		z-index: -1;
+		color: #ffffff;
+	}
+
+	&__row {
+		display: flex;
+	}
+
+	&__logo {
+	}
+
+	&__menu {
+	}
+
+	&__social {
+	}
+
+	&__slider {
+	}
+}
+.logo {
+	&__link {
+	}
+}
+.menu {
+	&__item {
+	}
+}
+.slider {
+	&__item {
 	}
 }
