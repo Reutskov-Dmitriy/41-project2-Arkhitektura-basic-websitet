@@ -87,7 +87,7 @@ a {
 
 .container {
   width: 1600px;
-  padding: 0 215px;
+  padding: 50px 215px;
 }
 
 .header {
@@ -119,6 +119,10 @@ a {
 .header__social {
   display: flex;
   gap: 20px;
+}
+.header__social a {
+  width: 100%;
+  height: 100%;
 }
 .header__social ._icon-facebook {
   position: relative;
@@ -153,6 +157,13 @@ a {
   border: 1px solid #ffffff;
   border-radius: 50%;
 }
+.wrap {
+  margin: 0 auto;
+  width: 919px;
+  height: 420px;
+  background-color: antiquewhite;
+}
+
 .menu {
   width: 100%;
   height: 100%;
@@ -164,4 +175,11 @@ a {
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
+}
+
+.slider__title {
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 98px;
+  letter-spacing: 0.1em;
 }/*# sourceMappingURL=style.css.map */

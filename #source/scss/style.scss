@@ -8,7 +8,7 @@ a {
 }
 .container {
 	width: 1600px;
-	padding: 0 215px;
+	padding: 50px 215px;
 }
 .header {
 	margin: 0 auto;
@@ -44,6 +44,10 @@ a {
 	&__social {
 		display: flex;
 		gap: 20px;
+		& a {
+			width: 100%;
+			height: 100%;
+		}
 		._icon-facebook {
 			position: relative;
 			&::before {
@@ -83,7 +87,11 @@ a {
 	}
 }
 
-wrap {
+.wrap {
+	margin: 0 auto;
+	width: 919px;
+	height: 420px;
+	background-color: antiquewhite;
 }
 
 .logo {
@@ -106,4 +114,13 @@ wrap {
 .slider {
 	&__item {
 	}
+	&__title {
+		// font-family: $ff-m;
+		font-weight: 700;
+		font-size: 80px;
+		line-height: 98px;
+		letter-spacing: 0.1em;
+	}
 }
+
+// section PROJECTS
