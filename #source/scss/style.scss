@@ -6,6 +6,12 @@ a {
 	cursor: pointer;
 	color: #ffffff;
 }
+h2 {
+	font-family: $ff-m;
+	font-weight: 700;
+	font-size: 44px;
+	line-height: 54px;
+}
 .container {
 	width: 1600px;
 	padding: 50px 215px;
@@ -87,13 +93,6 @@ a {
 	}
 }
 
-.wrap {
-	margin: 0 auto;
-	width: 919px;
-	height: 420px;
-	background-color: antiquewhite;
-}
-
 .logo {
 	&__link {
 	}
@@ -111,11 +110,43 @@ a {
 		line-height: 18px;
 	}
 }
+
+.wrap {
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	left: 50%;
+	bottom: 50px;
+	transform: translate(-50%);
+	width: 920px;
+
+	height: 420px;
+	background-color: rgb(248, 199, 135);
+}
+
+// Slider
+.slick-list {
+	overflow: hidden;
+}
+.slick-track {
+	display: flex;
+}
+
+.slick-dots {
+	position: absolute;
+	z-index: 9;
+}
 .slider {
+	min-width: 0;
 	&__item {
+		text-align: center;
 	}
 	&__title {
-		// font-family: $ff-m;
+		background-color: #7e5aff;
+		width: 100%;
+		font-family: $ff-m;
 		font-weight: 700;
 		font-size: 80px;
 		line-height: 98px;
@@ -123,4 +154,84 @@ a {
 	}
 }
 
+.next-page {
+	width: 40px;
+	height: 40px;
+	border: 1px solid #ffffff;
+	border-radius: 50%;
+}
+
 // section PROJECTS
+.projects {
+	color: #2c4058;
+	&__title {
+		text-align: center;
+	}
+}
+
+.list-posts {
+	&__column {
+		display: flex;
+		flex-direction: column;
+		gap: 120px;
+	}
+}
+.post {
+	margin: 0 auto;
+	&__trade-center {
+		max-width: 73.1vw;
+		height: 430px;
+	}
+
+	&__row {
+		display: flex;
+		gap: 70px;
+	}
+
+	&__row--revers {
+		display: flex;
+		flex-direction: row-reverse;
+		gap: 70px;
+	}
+
+	&__image {
+		max-width: 630px;
+		max-height: 470px;
+		& img {
+			width: 100%;
+			height: auto;
+			object-fit: cover;
+		}
+	}
+
+	&__content {
+		max-width: 470px;
+		max-height: 350px;
+	}
+
+	&__subtitle {
+		font-size: 22px;
+		line-height: 27px;
+	}
+
+	&__title {
+	}
+
+	&__description {
+		font-family: $ff-os;
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 30px;
+	}
+
+	&__btn {
+	}
+
+	&__location {
+		font-family: $ff-os;
+		font-style: italic;
+		font-weight: 400;
+		font-size: 15px;
+		line-height: 20px;
+	}
+}

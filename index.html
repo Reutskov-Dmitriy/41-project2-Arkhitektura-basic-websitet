@@ -7,6 +7,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/iconsfont.css">
 	<link rel="stylesheet" href="css/style.css">
+	<script defer src="js/jquery-3.6.0.min.js"></script>
+	<script defer src="js/slick.min.js"></script>
 	<script defer src="js/script.js"></script>
 	<title>Document</title>
 </head>
@@ -36,10 +38,17 @@
 			<div class="wrap">
 				<div class="header__slider slider">
 					<div class="slider__item">
-						<h2 clas="slider__title">SIMPLE & MODERN</h2>
+						<h2 class="slider__title">SIMPLE & MODERN</h2>
 						<p>WE MAKE THE WORLD BEAUTIFUL EVERYDAY</p>
 					</div>
+
+					<div class="slider__item">
+						<h2 class="slider__title">SIMPLE & MODERN</h2>
+						<p>WE MAKE THE WORLD BEAUTIFUL EVERYDAY</p>
+					</div>
+
 				</div>
+				<div class="next-page"></div>
 			</div>
 		</div>
 	</header>
@@ -56,31 +65,59 @@
 								<img src="assets/images/projects/projects-1.png" alt="Trade Center">
 							</figure>
 							<div class="post__content">
-								<h4 class="post__subtitle">ONE WORLD</h4>
+								<p class="post__subtitle">ONE WORLD</p>
 								<h3 class="post__title">TRADE CENTER</h3>
 								<p class="post__description">Increasing prosperity in our lives can be accomplished by having
 									the right frame of mind. The truth is, our thoughts are very powerful.</p>
-								<button class="post__btn">MORE DETAILS</button>
+								<button class="post__btn btn">MORE DETAILS</button>
 								<p class="post__location">New York City, United States - 1776 feet </p>
 							</div>
 						</div>
 					</article>
 
 					<article class="post__trade-center post">
-						<div class="post__row">
+						<div class="post__row--revers">
 							<figure class="post__image">
 								<img src="assets/images/projects/projects-1.png" alt="Trade Center">
 							</figure>
 							<div class="post__content">
-								<h3 class="post__title"></h3>
-								<p class="post__description"></p>
-								<button class="post__btn"></button>
-								<p class="post__location"></p>
+								<p class="post__subtitle">INTERNATIONAL</p>
+								<h3 class="post__title">COMMERCE CENTRE</h3>
+								<p class="post__description">Successful businesses have many things in common, today we’ll look
+									at the big ‘R’ of recognition and how a digital advertising network may help.</p>
+								<button class="post__btn btn">MORE DETAILS</button>
+								<p class="post__location">Hong Kong - 1588 feet</p>
 							</div>
 						</div>
 					</article>
 				</div>
 			</div>
+		</div>
+	</section>
+
+	<section class="news">
+		<div class="container">
+			<h2 class="title">LATEST NEWS</h2>
+			<ul class="news-slider">
+				<li class="news-slider__card card">
+					<figure class="card__img">
+						<img src="assets/images/news/news-1.png" alt="">
+					</figure>
+					<div class="card__content">
+						<h3 class="card_title">SEE THE UNMATCHED BEAUTY OF THE GREAT.</h3>
+						<p class="card__description">Free directories: directories are perfect for customers that are
+							searching for...</p>
+						<div class="card__author author">
+							<figure class="author__img">
+								<img src="assets/images/author/ALJA BRUN-1.png" alt="">
+							</figure>
+							<p>ALJA BRUN</p>
+							<p>20 Jan 2020</p>
+						</div>
+					</div>
+				</li>
+
+			</ul>
 		</div>
 	</section>
 
