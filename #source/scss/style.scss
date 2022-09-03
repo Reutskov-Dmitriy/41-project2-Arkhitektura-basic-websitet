@@ -1,0 +1,16 @@
+@import "reset";
+@import "fonts";
+
+header {
+	width: 1600px;
+	height: 800px;
+	background: url(../../assets/images/tu-tram-pham-202263\ 1.png) 0 0 / cover no-repeat;
+	&::before {
+		content: "";
+		width: 1600px;
+		height: 800px;
+		background: linear-gradient(243.43deg, #7e5aff 16.9%, #55b7ff 83.27%);
+		position: absolute;
+		z-index: -1;
+	}
+}
