@@ -201,7 +201,7 @@ h2 {
 		border-radius: 50%;
 		cursor: pointer;
 		&::before {
-			content: url(../../assets/images/icons/arrow-bottom.svg);
+			content: url(../assets/images/icons/arrow-bottom.svg);
 		}
 	}
 }
@@ -417,11 +417,6 @@ h2 {
 				border-radius: 50%;
 				font-size: 0;
 			}
-			// & .slick-active {
-			// 	& button {
-			// 		background-color: #ffffff;
-			// 	}
-			// }
 		}
 	}
 	& .slick-dots li.slick-active {
@@ -451,7 +446,6 @@ h2 {
 		min-width: 100%;
 		height: 240px;
 		overflow: hidden;
-		background-color: burlywood;
 		& img {
 			object-fit: cover;
 			width: 100%;
@@ -471,10 +465,8 @@ h2 {
 		font-size: 18px;
 		line-height: 25px;
 	}
-
-	&__author {
-	}
 }
+
 .author {
 	height: 60px;
 	margin-top: 40px;
@@ -497,7 +489,6 @@ h2 {
 
 	&__date {
 		margin-top: 6px;
-
 		font-weight: 400;
 		font-size: 14px;
 		line-height: 17px;
@@ -527,17 +518,15 @@ h2 {
 		}
 	}
 	&__grid {
+		margin: 90px auto 0 auto;
 	}
 }
-.container {
-}
+
 .grid {
-	margin: 90px auto 0 auto;
-	background-color: #7e5aff;
 	width: 1170px;
 	height: 438px;
 	display: grid;
-	grid-template-columns: 580px 1fr 1fr;
+	grid-template-columns: 580px 285px 285px;
 	grid-template-rows: 214px 214px;
 	gap: 10px;
 	&__cover {
@@ -582,8 +571,6 @@ h2 {
 .gallery-btn {
 	display: block;
 	margin: 60px auto 0 auto;
-}
-.btn {
 }
 
 // FOOTER //////////

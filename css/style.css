@@ -269,7 +269,7 @@ h2 {
   cursor: pointer;
 }
 .next-page a::before {
-  content: url(../../assets/images/icons/arrow-bottom.svg);
+  content: url(../assets/images/icons/arrow-bottom.svg);
 }
 
 .projects {
@@ -470,7 +470,6 @@ h2 {
   min-width: 100%;
   height: 240px;
   overflow: hidden;
-  background-color: burlywood;
 }
 .card__image img {
   -o-object-fit: cover;
@@ -489,6 +488,7 @@ h2 {
   font-size: 18px;
   line-height: 25px;
 }
+
 .author {
   height: 60px;
   margin-top: 40px;
@@ -534,13 +534,15 @@ h2 {
   left: 50%;
   transform: translate(-50%);
 }
-.grid {
+.gallery__grid {
   margin: 90px auto 0 auto;
-  background-color: #7e5aff;
+}
+
+.grid {
   width: 1170px;
   height: 438px;
   display: grid;
-  grid-template-columns: 580px 1fr 1fr;
+  grid-template-columns: 580px 285px 285px;
   grid-template-rows: 214px 214px;
   gap: 10px;
 }
