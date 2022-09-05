@@ -1,20 +1,24 @@
 $(document).ready(function () {
 	$('.slider').slick({
 		dots: true,
-
+		arrows: false,
 		speed: 2000,
 		autoplay: 4000,
 		pauseonHover: true,
 	});
 
-	$('.header__slider').slick({
-		arrows: false,
-	});
-
-
-	$('.news-slider').slick({
-		slidesToShow: 3,
+	$('.autoplay').slick({
 		arrows: true,
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		autoplay: true,
+		speed: 1000,
+		autoplaySpeed: 4000,
+		adaptiveHeight: true,
+		dots: true,
+		pauseOnHover: true,
+		pauseOnDotsHover: true,
+
 	})
 
 });
