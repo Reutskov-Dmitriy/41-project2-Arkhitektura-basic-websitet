@@ -510,7 +510,7 @@ h2 {
 .gallery {
 	padding: 185px 0;
 	width: 100vw;
-	height: 100vh;
+	height: 1027px;
 
 	&__title {
 		position: relative;
@@ -532,6 +532,7 @@ h2 {
 .container {
 }
 .grid {
+	margin: 90px auto 0 auto;
 	background-color: #7e5aff;
 	width: 1170px;
 	height: 438px;
@@ -579,7 +580,8 @@ h2 {
 	}
 }
 .gallery-btn {
-	margin-top: 60px;
+	display: block;
+	margin: 60px auto 0 auto;
 }
 .btn {
 }
